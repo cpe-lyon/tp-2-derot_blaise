@@ -25,10 +25,10 @@
 6. Transformez MY_VAR en une variable d’environnement et recommencez la question précédente. Expliquez.
 >Pour transformer MY_VAR en une variable d'environnement (= globale), on execute "export MY_VAR="testvar" && printev MY_VAR". Si on recréé un nouveau shell, on peut cette fois ci afficher le contenu le MY_VAR grace a la commande echo car c'est désormais une variable d'environnement.
 
-7. Créer la variable d’environnement NOMS ayant pour contenu vos noms de binômes séparés par un espace. Aﬀicher la valeur de NOMS pour vérifier que l’affectation est correcte. 
+7. Créer la variable d’environnement NOMS ayant pour contenu vos noms de binômes séparés par un espace. Afficher la valeur de NOMS pour vérifier que l’affectation est correcte. 
 >Même principe que la question précédente : on execute "export NOMS='BLAISE DEROT' && printenv NOMS" puis on affiche sa valeur grace a "echo $NOMS" : on obtient en sortie "BLAISE DEROT".
 
-8. Ecrivez une commande qui aﬀiche ”Bonjour à vous deux, binôme1 binôme2!” (où binôme1 et binôme2 sont vos deux noms) en utilisant la variable NOMS. 
+8. Ecrivez une commande qui affiche ”Bonjour à vous deux, binôme1 binôme2!” (où binôme1 et binôme2 sont vos deux noms) en utilisant la variable NOMS. 
 >On execute "echo "Bonjour à vous deux, $NOMS !" et on obtient en sortie "Bonjour à vous deux, BLAISE DEROT".
 
 9. Quelle différence y a-t-il entre donner une valeur vide à une variable et l’utilisation de la commande unset?
